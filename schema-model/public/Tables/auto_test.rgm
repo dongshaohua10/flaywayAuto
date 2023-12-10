@@ -21,7 +21,7 @@ table "public"."auto_test" {
       type = character varying(20)
     }
     column "tag_peni" {
-      type = character varying(20)
+      type = character varying(30)
     }
     column "item_number" {
       type = character varying(20)
