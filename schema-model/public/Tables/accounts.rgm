@@ -37,18 +37,24 @@ table "public"."accounts" {
 index "public"."accounts_email_key" {
   table = "public"."accounts"
   type = btree
-  columns = [
-    email
-  ]
+  columns = <
+    {
+      definition = email
+    }
+
+  >
   isUnique = True
 }
 
 index "public"."accounts_username_key" {
   table = "public"."accounts"
   type = btree
-  columns = [
-    username
-  ]
+  columns = <
+    {
+      definition = username
+    }
+
+  >
   isUnique = True
 }
 

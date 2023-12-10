@@ -22,9 +22,12 @@ table "public"."roles" {
 index "public"."roles_role_name_key" {
   table = "public"."roles"
   type = btree
-  columns = [
-    role_name
-  ]
+  columns = <
+    {
+      definition = role_name
+    }
+
+  >
   isUnique = True
 }
 
